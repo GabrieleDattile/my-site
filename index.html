@@ -5,13 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito in Fase di Creazione</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Sito in Fase di Creazione</h1>
         <p>Il mio sito web sarà presto online</p>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-        </a>
+        <button onclick="redirectToRickRoll()">anteprima</button>
     </div>
+
+    <script>
+        function redirectToRickRoll() {
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    </script>
 </body>
 </html>
