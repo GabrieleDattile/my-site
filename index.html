@@ -3,40 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito in Fase di Creazione</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Il Mio Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Sito in Fase di Creazione</h1>
-        <p>Il mio sito web sarà presto online</p>
-        <button onclick="redirectToRickRoll()">anteprima</button>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Il Mio Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Chi Sono</a></li>
+                    <li><a href="#projects">Progetti</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <script>
-        function redirectToRickRoll() {
-            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-        }
-    </script>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Chi Sono</h2>
+            <p>Ciao! Sono un appassionato di sviluppo web e tecnologia. Questo è il mio portfolio, dove condivido i miei progetti e competenze.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Progetti</h2>
+            <div id="github-projects" class="projects-grid">
+                <!-- I progetti GitHub verranno caricati qui -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contatti</h2>
+            <p>Puoi contattarmi via email: <a href="mailto:dattilegabriele@gmail.com">dattilegabriele@gmail.com</a></p>
+</div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Il Mio Portfolio</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
